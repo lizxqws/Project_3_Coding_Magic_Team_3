@@ -1,0 +1,13 @@
+@import "utils/placeholders";
+@import "utils/variables";
+
+* {
+  box-sizing: border-box;
+  font-family: "Roboto", sans-serif;
+}
+
+.container {
+  width: 720px;
+  padding: 0;
+  margin: 0 auto;
+}
