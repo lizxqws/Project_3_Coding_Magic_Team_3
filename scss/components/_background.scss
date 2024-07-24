@@ -10,7 +10,8 @@
 
 .main-block {
   display: flex;
-  justify-content: center;
+  align-items: center;
+  flex-direction: column;
   width: 1090px;
   height: 100%;
   min-height: 100vh;
