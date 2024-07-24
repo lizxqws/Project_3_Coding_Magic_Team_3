@@ -4,11 +4,32 @@
   flex-direction: column;
 }
 
+.footer__message-button, .footer__message-input {
+  font-family: "Montserrat Alternates", sans-serif;
+  font-weight: 400;
+  font-size: 12px;
+  line-height: 14.6px;
+}
+
 .main-block__title {
   font-family: "Montserrat Alternates", sans-serif;
   font-weight: 400;
   font-size: 24px;
   line-height: 29.3px;
+}
+
+.footer__list-item {
+  font-family: "Montserrat Alternates", sans-serif;
+  font-weight: 400;
+  font-size: 12px;
+  line-height: 20.4px;
+}
+
+.footer__message-text {
+  font-family: "Montserrat Alternates", sans-serif;
+  font-weight: 400;
+  font-size: 6px;
+  line-height: 7.3px;
 }
 
 .wrapper {
@@ -30,6 +51,63 @@
 .main-block__title {
   margin-top: 36px;
   margin-bottom: 36px;
+}
+
+.footer {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  height: 220px;
+  background-color: #FFFFFF;
+}
+.footer__container {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  width: 1091px;
+  height: 100px;
+}
+.footer__list {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-evenly;
+  height: inherit;
+}
+.footer__list-item {
+  color: #000000;
+}
+.footer__message {
+  width: 347px;
+  height: 60px;
+  margin-top: 36px;
+  margin-bottom: 4px;
+}
+.footer__message-box {
+  display: flex;
+  justify-content: space-between;
+  width: inherit;
+  height: 35px;
+  margin-bottom: 18px;
+}
+.footer__message-input {
+  width: 204px;
+  padding: 10px;
+  border: none;
+  border-radius: 50px;
+  color: #7E7E7E;
+  background-color: #d7d7d7;
+}
+.footer__message-button {
+  width: 107px;
+  padding: 10px;
+  color: #FFFFFF;
+  background-color: #000000;
+  border: none;
+  border-radius: 50px;
+}
+.footer__message-text {
+  color: #000000;
 }
 
 * {
