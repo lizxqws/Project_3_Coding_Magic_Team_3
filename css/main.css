@@ -14,7 +14,7 @@
 .wrapper {
   display: flex;
   justify-content: center;
-  background: url(../../src/images/background.jpg);
+  background: url(../../src/images/bg.jpg);
   background-repeat: no-repeat;
   background-size: cover;
   height: 100%;
