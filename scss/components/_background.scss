@@ -9,9 +9,7 @@
 }
 
 .main-block {
-  display: flex;
-  align-items: center;
-  flex-direction: column;
+  @extend %flex;
   width: 1090px;
   height: 100%;
   min-height: 100vh;

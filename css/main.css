@@ -1,3 +1,9 @@
+.container, .main-block {
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+}
+
 .main-block__title {
   font-family: "Montserrat Alternates", sans-serif;
   font-weight: 400;
@@ -16,9 +22,6 @@
 }
 
 .main-block {
-  display: flex;
-  align-items: center;
-  flex-direction: column;
   width: 1090px;
   height: 100%;
   min-height: 100vh;
@@ -35,9 +38,6 @@
 }
 
 .container {
-  display: flex;
-  align-items: center;
-  flex-direction: column;
   width: 720px;
   margin: 0 auto;
 }
