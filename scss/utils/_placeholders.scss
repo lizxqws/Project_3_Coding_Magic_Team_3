@@ -1,5 +1,11 @@
 // Основнi стилi тексту
 
+%flex {
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+}
+
 %small-text {
   font-family: "Montserrat Alternates", sans-serif;
   font-weight: 400;
