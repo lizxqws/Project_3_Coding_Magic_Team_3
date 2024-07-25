@@ -35,7 +35,7 @@
       padding-right: 45px;
       width: 215px;
     }
-    
+
     &-text::-webkit-outer-spin-button,
     &-text::-webkit-inner-spin-button {
       /* display: none; <- Crashes Chrome on hover */
@@ -52,6 +52,10 @@
       width: 35px;
       height: 35px;
       padding: 10px;
+    }
+
+    &-message {
+      @extend %small-text;
     }
   }
 }
