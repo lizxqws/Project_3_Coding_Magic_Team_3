@@ -1,3 +1,5 @@
+// Footer
+
 .footer {
   display: flex;
   justify-content: center;
@@ -62,9 +64,93 @@
       border-radius: 50px;
     }
 
+    &-button:hover,
+    &-button:focus {
+      cursor: pointer;
+    }
+
     &-text {
       @extend %note-text;
       color: $black;
     }
   }
+
+  // Modal window
+
+  &__mw-wrapper {
+    display: none;
+    position: fixed;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%, -50%);
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.5);
+  }
+
+  &__mw {
+    @extend %flex;
+    justify-content: center;
+
+    position: relative;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%, -50%);
+    width: 463px;
+    height: 245px;
+    background-color: $white;
+    border-radius: 20px;
+
+    &-button-close {
+      position: absolute;
+      top: 30px;
+      right: 30px;
+      padding: 0;
+      background: none;
+      border: none;
+    }
+
+    &-button-close:hover,
+    &-button-close:focus {
+      cursor: pointer;
+    }
+
+    &-title {
+      @extend %title-Intertext;
+
+      margin-top: 14px;
+    }
+
+    &-box {
+      @extend %flex;
+
+      position: relative;
+      width: 378px;
+      height: 106px;
+    }
+
+    &-icon {
+      position: absolute;
+    }
+  }
+}
+
+#footer__mw-icon1 {
+  top: 0;
+  left: 0;
+}
+
+#footer__mw-icon2 {
+  top: 0;
+  right: 0;
+}
+
+#footer__mw-icon3 {
+  bottom: 0;
+  left: 44px;
+}
+
+#footer__mw-icon4 {
+  bottom: 0;
+  right: 44px;
 }

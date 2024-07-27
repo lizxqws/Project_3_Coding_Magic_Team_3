@@ -37,12 +37,37 @@
       <div class="footer__message">
         <div class="footer__message-box">
           <input class="footer__message-input" type="email" placeholder="Ваша ел. адреса...">
-          <button class="footer__message-button">Підписатись</button>
+          <button id="mw-open" class="footer__message-button">Підписатись</button>
         </div>
         <p class="footer__message-text">*Підписавшись, Ви зможете отримувати інформаццію про новинки на сайті</p>
       </div>
     </div>
   </footer>
+
+  <div id="modal" class="footer__mw-wrapper">
+    <div class="footer__mw">
+      <button id="mw-close" class="footer__mw-button-close">
+        <svg id="footer__mw-close" width="17" height="17" viewBox="0 0 17 17" fill="none">
+          <use xlink:href="./src/icons/close-icon.svg#close"></use>
+        </svg>
+      </button>
+      <div class="footer__mw-box">
+        <h2 class="footer__mw-title">Дякую за підписку!</h2>
+        <svg class="footer__mw-icon" id="footer__mw-icon1" width="30" height="30" viewBox="0 0 30 30" fill="black">
+          <use xlink:href="../src/icons/sword.svg#sword"></use>
+        </svg>
+        <svg class="footer__mw-icon" id="footer__mw-icon2" width="30" height="30" viewBox="0 0 30 30" fill="black">
+          <use xlink:href="../src/icons/game-development.svg#game"></use>
+        </svg>
+        <svg class="footer__mw-icon" id="footer__mw-icon3" width="30" height="30" viewBox="0 0 30 30" fill="black">
+          <use xlink:href="../src/icons/puzzle.svg#puzzle"></use>
+        </svg>
+        <svg class="footer__mw-icon" id="footer__mw-icon4" width="30" height="30" viewBox="0 0 30 30" fill="black">
+          <use xlink:href="../src/icons/tic-tac-toe.svg#tic-tac-toe"></use>
+        </svg>
+      </div>
+    </div>
+  </div>
 </body>
 
 <script src="./index.js"></script>

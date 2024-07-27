@@ -1,4 +1,4 @@
-.container, .main-block {
+.container, .footer__mw-box, .footer__mw, .main-block {
   display: flex;
   align-items: center;
   flex-direction: column;
@@ -30,6 +30,13 @@
   font-weight: 400;
   font-size: 6px;
   line-height: 7.3px;
+}
+
+.footer__mw-title {
+  font-family: "Inter", sans-serif;
+  font-weight: 400;
+  font-size: 20px;
+  line-height: 24.2px;
 }
 
 .wrapper {
@@ -106,8 +113,74 @@
   border: none;
   border-radius: 50px;
 }
+.footer__message-button:hover, .footer__message-button:focus {
+  cursor: pointer;
+}
 .footer__message-text {
   color: #000000;
+}
+.footer__mw-wrapper {
+  display: none;
+  position: fixed;
+  left: 50%;
+  top: 50%;
+  transform: translate(-50%, -50%);
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.5);
+}
+.footer__mw {
+  justify-content: center;
+  position: relative;
+  left: 50%;
+  top: 50%;
+  transform: translate(-50%, -50%);
+  width: 463px;
+  height: 245px;
+  background-color: #FFFFFF;
+  border-radius: 20px;
+}
+.footer__mw-button-close {
+  position: absolute;
+  top: 30px;
+  right: 30px;
+  padding: 0;
+  background: none;
+  border: none;
+}
+.footer__mw-button-close:hover, .footer__mw-button-close:focus {
+  cursor: pointer;
+}
+.footer__mw-title {
+  margin-top: 14px;
+}
+.footer__mw-box {
+  position: relative;
+  width: 378px;
+  height: 106px;
+}
+.footer__mw-icon {
+  position: absolute;
+}
+
+#footer__mw-icon1 {
+  top: 0;
+  left: 0;
+}
+
+#footer__mw-icon2 {
+  top: 0;
+  right: 0;
+}
+
+#footer__mw-icon3 {
+  bottom: 0;
+  left: 44px;
+}
+
+#footer__mw-icon4 {
+  bottom: 0;
+  right: 44px;
 }
 
 * {
