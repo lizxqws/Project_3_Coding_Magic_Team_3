@@ -14,15 +14,95 @@
 </head>
 
 <body>
+  <div id="pop-up__window" class="pop-up__wrapper">
+    <div class="pop-up">
+      <button id="mw-close" class="footer__mw-button-close">
+        <svg id="footer__mw-close" width="17" height="17" viewBox="0 0 17 17" fill="none">
+          <use xlink:href="./src/icons/close-icon.svg#close"></use>
+        </svg>
+      </button>
+      <div class="pop-up__box">
+        <div class="pop-up__text">
+          <p>Привіт!</p>
+          <p>Ви потрапили на сайт інтерактивних ігор та завдань</p>
+          <p>Надіємось, що вам сподобається і ви отримаєте позитивні емоції!</p>
+          <p>Бажаємо Вам гарно провести час!</p>
+        </div>
+        <p id="pop-up__name" class="pop-up__input-text">Введіть своє ім’я:</p>
+        <input id="pop-up__text-input" class="footer__message-input" type="text" placeholder="Ваше ім’я..." required>
+        <button id="pop-up__save" class="footer__message-button">Зберегти</button>
+      </div>
+      <svg class="footer__mw-icon" id="pop-up__icon1" width="30" height="30" viewBox="0 0 30 30" fill="black">
+        <use xlink:href="../src/icons/sword.svg#sword"></use>
+      </svg>
+      <svg class="footer__mw-icon" id="pop-up__icon2" width="30" height="30" viewBox="0 0 30 30" fill="black">
+        <use xlink:href="../src/icons/game-development.svg#game"></use>
+      </svg>
+      <svg class="footer__mw-icon" id="pop-up__icon3" width="30" height="30" viewBox="0 0 30 30" fill="black">
+        <use xlink:href="../src/icons/puzzle.svg#puzzle"></use>
+      </svg>
+      <svg class="footer__mw-icon" id="pop-up__icon4" width="30" height="30" viewBox="0 0 30 30" fill="black">
+        <use xlink:href="../src/icons/tic-tac-toe.svg#tic-tac-toe"></use>
+      </svg>
+    </div>
+  </div>
   <header></header>
   <main class="wrapper">
     <div class="main-block">
       <h1 class="main-block__title">Популярні інетрактивні ігри</h1>
     </div>
   </main>
-  <footer></footer>
+  <footer class="footer">
+    <div class="footer__container">
+      <svg width="165" height="70" viewBox="0 0 165 70" fill="black">
+        <use xlink:href="./src/icons/logo-footer.svg#logo-footer"></use>
+      </svg>
+
+      <ul class="footer__list">
+        <li class="footer__list-item">Тел: +38 (123) 456 78 90 </li>
+        <li class="footer__list-item">E-Mail: codingmagic@gmail.com</li>
+        <li class="footer__list-item">Facebook: CodingMagic</li>
+        <li class="footer__list-item">Twitter: CodingMagic</li>
+        <li class="footer__list-item">Instagram: CodingMagic</li>
+      </ul>
+
+      <div class="footer__message">
+        <div class="footer__message-box">
+          <input id="footer-email" class="footer__message-input" type="email" placeholder="Ваша ел. адреса..." required>
+          <button id="mw-open" class="footer__message-button">Підписатись</button>
+        </div>
+        <p class="footer__message-text">*Підписавшись, Ви зможете отримувати інформаццію про новинки на сайті</p>
+      </div>
+    </div>
+  </footer>
+
+  <div id="modal" class="footer__mw-wrapper">
+    <div class="footer__mw">
+      <button id="mw-close" class="footer__mw-button-close">
+        <svg id="footer__mw-close" width="17" height="17" viewBox="0 0 17 17" fill="none">
+          <use xlink:href="./src/icons/close-icon.svg#close"></use>
+        </svg>
+      </button>
+      <div class="footer__mw-box">
+        <h2 class="footer__mw-title">Дякую за підписку!</h2>
+        <svg class="footer__mw-icon" id="footer__mw-icon1" width="30" height="30" viewBox="0 0 30 30" fill="black">
+          <use xlink:href="../src/icons/sword.svg#sword"></use>
+        </svg>
+        <svg class="footer__mw-icon" id="footer__mw-icon2" width="30" height="30" viewBox="0 0 30 30" fill="black">
+          <use xlink:href="../src/icons/game-development.svg#game"></use>
+        </svg>
+        <svg class="footer__mw-icon" id="footer__mw-icon3" width="30" height="30" viewBox="0 0 30 30" fill="black">
+          <use xlink:href="../src/icons/puzzle.svg#puzzle"></use>
+        </svg>
+        <svg class="footer__mw-icon" id="footer__mw-icon4" width="30" height="30" viewBox="0 0 30 30" fill="black">
+          <use xlink:href="../src/icons/tic-tac-toe.svg#tic-tac-toe"></use>
+        </svg>
+      </div>
+    </div>
+  </div>
 </body>
 
-<script src="./index.js"></script>
+<script src="./pop-up.js"></script>
+<script src="./footer.js"></script>
 
 </html>
