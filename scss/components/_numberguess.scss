@@ -1,25 +1,55 @@
 .NumberGuess {
-	display: flex;
-	align-items: center;
-	margin-top: 35px;
+  width: 576px;
+  margin-top: 35px;
 
-	&--inputbox{
-		padding: 0;
-		color: $lightgrey;
-		border: 0px solid $lightgrey;
-		
-		&__input{
-			color: $gray
-			border-radius: 20px 0 0 20px;
-		}
-	
-		&__button {
-			color: $black
-			border-radius: 0 20px 20px 0;
-		}
-	}
+  .subtitle-text {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-bottom: 36px;
+  }
+
+  &--inputbox {
+    display: flex;
+    padding: 0;
+
+    &__input {
+      padding: 10px 0 10px 10px;
+      border: none;
+      background-color: $lightgrey;
+      border-radius: 20px 0 0 20px;
+      color: $gray;
+      width: 115px;
+      appearance: none;
+      -moz-appearance: textfield;
+    }
+
+    &__button {
+      border: none;
+      background-color: $black;
+      border-radius: 0 20px 20px 0;
+      width: 35px;
+    }
+
+    &__result {
+      display: flex;
+      width: 426px;
+      margin: 10px 0;
+      justify-content: flex-end;
+    }
+
+    &__shadow {
+      display: flex;
+      box-shadow: 6px 6px 4px rgba(0, 0, 0, 0.25);
+      border-radius: 20px;
+    }
+  }
+
+  .ResultMGood {
+    color: $green;
+  }
+
+  .ResultMBad {
+    color: $red;
+  }
 }
-
-.ResultMGood{color: $green};
-.ResultMBad{color: $red};
-

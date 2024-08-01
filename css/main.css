@@ -56,7 +56,6 @@
 .NumberGuess--inputbox {
     display: flex;
     padding: 0;
-    color: #d3d3d3;
 }
 
 .NumberGuess--inputbox__input {
