@@ -1,0 +1,25 @@
+.NumberGuess {
+	display: flex;
+	align-items: center;
+	margin-top: 35px;
+
+	&--inputbox{
+		padding: 0;
+		color: $lightgrey;
+		border: 0px solid $lightgrey;
+		
+		&__input{
+			color: $gray
+			border-radius: 20px 0 0 20px;
+		}
+	
+		&__button {
+			color: $black
+			border-radius: 0 20px 20px 0;
+		}
+	}
+}
+
+.ResultMGood{color: $green};
+.ResultMBad{color: $red};
+
