@@ -2,7 +2,7 @@ const closeButton = document.querySelector("#mw-close");
 const saveButton = document.querySelector("#pop-up__save");
 const nameInput = document.querySelector("#pop-up__text-input");
 const popUp = document.querySelector("#pop-up__window");
-const body = document.querySelector("body");
+
 
 saveButton.addEventListener("click", function () {
   const nameValue = nameInput.value;
