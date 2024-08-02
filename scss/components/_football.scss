@@ -1,0 +1,22 @@
+.football {
+  &__wrapper {
+    position: relative;
+    width: 720px;
+    height: 220px;
+    border: 2px solid $black;
+    border-radius: 37px;
+    background-color: #5abb58;
+  }
+  &__title {
+    @extend %subtitle-text;
+    margin-bottom: 36px;
+  }
+
+  &__ball {
+    position: absolute;
+
+    top: 85px;
+    left: 92px;
+    transition: 1s all;
+  }
+}
