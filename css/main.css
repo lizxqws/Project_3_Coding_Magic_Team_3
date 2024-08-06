@@ -1,22 +1,10 @@
-.container,
-.check-year__box,
-.scientists__button-box2,
-.scientists__button-box1,
-.scientists__button-block,
-.scientists__card,
-.scientists,
-.main-block,
-.footer__mw-box,
-.footer__mw {
+.container, .scientists__button-box2, .scientists__button-box1, .scientists__button-block, .scientists__card, .scientists, .footer__mw-box, .footer__mw, .check-year__box, .main-block {
   display: flex;
   align-items: center;
   flex-direction: column;
 }
 
-.check-year__input-message,
-.check-year__input-text,
-.footer__message-button,
-.footer__message-input {
+.footer__message-button, .footer__message-input, .check-year__input-message, .check-year__input-text {
   font-family: "Montserrat Alternates", sans-serif;
   font-weight: 400;
   font-size: 12px;
@@ -30,16 +18,14 @@
   line-height: 29.3px;
 }
 
-.football__title,
-.check-year__title,
-.scientists__title {
+.scientists__title, .check-year__title, .football__title {
   font-family: "Montserrat Alternates", sans-serif;
   font-weight: 400;
   font-size: 16px;
   line-height: 19.5px;
 }
-.footer__list-item,
-.scientists__button {
+
+.scientists__button, .footer__list-item {
   font-family: "Montserrat Alternates", sans-serif;
   font-weight: 400;
   font-size: 12px;
@@ -86,7 +72,7 @@
   width: 720px;
   height: 220px;
   border: 2px solid #000000;
-  border-radius: 37px;
+  border-radius: 25px;
   background-color: #5abb58;
 }
 .football__title {
@@ -98,6 +84,7 @@
   left: 92px;
   transition: 1s all;
 }
+
 .check-year {
   padding-top: 36px;
   padding-bottom: 36px;
@@ -128,8 +115,7 @@
   padding-right: 45px;
   width: 215px;
 }
-.check-year__input-text::-webkit-outer-spin-button,
-.check-year__input-text::-webkit-inner-spin-button {
+.check-year__input-text::-webkit-outer-spin-button, .check-year__input-text::-webkit-inner-spin-button {
   /* display: none; <- Crashes Chrome on hover */
   -webkit-appearance: none;
   margin: 0; /* <-- Apparently some margin are still there even though it's hidden */
@@ -144,8 +130,7 @@
   height: 35px;
   padding: 10px;
 }
-.check-year__input-button:hover,
-.check-year__input-button:focus {
+.check-year__input-button:hover, .check-year__input-button:focus {
   cursor: pointer;
 }
 .footer {
@@ -201,8 +186,7 @@
   border: none;
   border-radius: 50px;
 }
-.footer__message-button:hover,
-.footer__message-button:focus {
+.footer__message-button:hover, .footer__message-button:focus {
   cursor: pointer;
 }
 .footer__message-text {
@@ -238,8 +222,7 @@
   background: none;
   border: none;
 }
-.footer__mw-button-close:hover,
-.footer__mw-button-close:focus {
+.footer__mw-button-close:hover, .footer__mw-button-close:focus {
   cursor: pointer;
 }
 .footer__mw-title {
@@ -269,6 +252,7 @@
   bottom: 0;
   right: 44px;
 }
+
 .scientists {
   margin-bottom: 36px;
 }
