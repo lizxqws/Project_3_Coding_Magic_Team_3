@@ -18,6 +18,22 @@
   <main class="wrapper">
     <div class="main-block">
       <h1 class="main-block__title">Популярні інетрактивні ігри</h1>
+      <hr class="line">
+      <section class="container check-year">
+        <h2 class="check-year__title">Перевір в який рік ти народився</h2>
+        <div class="check-year__box">
+          <div class="check-year__input">
+            <input class="check-year__input-text" type="number" placeholder="Введіть рік народження">
+            <button id="btn" class="check-year__input-button" data-action="add">
+              <svg viewBox="0 0 16 16" width="16" height="16">
+                <use xlink:href="./src/icons/search-icon.svg#search" fill="white" />
+              </svg>
+            </button>
+          </div>
+          <p class="check-year__input-message"></p>
+        </div>
+      </section>
+      <hr class="line">
 
       <section class="scientists">
         <h2 class="scientists__title">Обери вченого/их</h2>
@@ -100,6 +116,7 @@
   </div>
 </body>
 
+<script src="./check-year.js"></script>
 <script src="./footer.js"></script>
 <script src="./scientists.js"></script>
 <script src="./index.js"></script>
