@@ -1,7 +1,23 @@
-.container, .scientists__button-box2, .scientists__button-box1, .scientists__button-block, .scientists__card, .scientists, .main-block {
+.container,
+.scientists__button-box2,
+.scientists__button-box1,
+.scientists__button-block,
+.scientists__card,
+.scientists,
+.main-block,
+.footer__mw-box,
+.footer__mw {
   display: flex;
   align-items: center;
   flex-direction: column;
+}
+
+.footer__message-button,
+.footer__message-input {
+  font-family: "Montserrat Alternates", sans-serif;
+  font-weight: 400;
+  font-size: 12px;
+  line-height: 14.6px;
 }
 
 .main-block__title {
@@ -17,12 +33,26 @@
   font-size: 16px;
   line-height: 19.5px;
 }
-
+.footer__list-item,
 .scientists__button {
   font-family: "Montserrat Alternates", sans-serif;
   font-weight: 400;
   font-size: 12px;
   line-height: 20.4px;
+}
+
+.footer__message-text {
+  font-family: "Montserrat Alternates", sans-serif;
+  font-weight: 400;
+  font-size: 6px;
+  line-height: 7.3px;
+}
+
+.footer__mw-title {
+  font-family: "Inter", sans-serif;
+  font-weight: 400;
+  font-size: 20px;
+  line-height: 24.2px;
 }
 
 .wrapper {
@@ -46,6 +76,127 @@
   margin-bottom: 36px;
 }
 
+.footer {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  min-height: 220px;
+  background-color: #ffffff;
+}
+.footer__container {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  width: 1091px;
+  min-height: 100px;
+}
+.footer__list {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-evenly;
+  height: inherit;
+}
+.footer__list-item {
+  color: #000000;
+}
+.footer__message {
+  width: 347px;
+  height: 60px;
+  margin-top: 36px;
+  margin-bottom: 4px;
+}
+.footer__message-box {
+  display: flex;
+  justify-content: space-between;
+  width: inherit;
+  height: 35px;
+  margin-bottom: 18px;
+}
+.footer__message-input {
+  width: 204px;
+  padding: 10px;
+  border: none;
+  border-radius: 50px;
+  color: #7e7e7e;
+  background-color: #d7d7d7;
+}
+.footer__message-button {
+  width: 107px;
+  padding: 10px;
+  color: #ffffff;
+  background-color: #000000;
+  border: none;
+  border-radius: 50px;
+}
+.footer__message-button:hover,
+.footer__message-button:focus {
+  cursor: pointer;
+}
+.footer__message-text {
+  color: #000000;
+}
+
+.footer__mw-wrapper {
+  display: none;
+  position: fixed;
+  left: 50%;
+  top: 50%;
+  transform: translate(-50%, -50%);
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.5);
+}
+.footer__mw {
+  justify-content: center;
+  position: relative;
+  left: 50%;
+  top: 50%;
+  transform: translate(-50%, -50%);
+  width: 463px;
+  height: 245px;
+  background-color: #ffffff;
+  border-radius: 20px;
+}
+.footer__mw-button-close {
+  position: absolute;
+  top: 30px;
+  right: 30px;
+  padding: 0;
+  background: none;
+  border: none;
+}
+.footer__mw-button-close:hover,
+.footer__mw-button-close:focus {
+  cursor: pointer;
+}
+.footer__mw-title {
+  margin-top: 14px;
+}
+.footer__mw-box {
+  position: relative;
+  width: 378px;
+  height: 106px;
+}
+.footer__mw-icon {
+  position: absolute;
+}
+.footer__mw-icon1 {
+  top: 0;
+  left: 0;
+}
+.footer__mw-icon2 {
+  top: 0;
+  right: 0;
+}
+.footer__mw-icon3 {
+  bottom: 0;
+  left: 44px;
+}
+.footer__mw-icon4 {
+  bottom: 0;
+  right: 44px;
+}
 .scientists {
   margin-bottom: 36px;
 }
@@ -79,7 +230,7 @@
   border: none;
   border-radius: 20px;
   background-color: #000000;
-  color: #FFFFFF;
+  color: #ffffff;
   box-shadow: 3px 3px rgba(0, 0, 0, 0.25);
   margin-bottom: 20px;
   cursor: pointer;
