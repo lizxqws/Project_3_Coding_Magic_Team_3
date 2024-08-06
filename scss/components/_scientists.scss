@@ -1,0 +1,69 @@
+.scientists {
+  @extend %flex;
+  margin-bottom: 36px;
+
+  &__title {
+    @extend %subtitle-text;
+    margin-bottom: 36px;
+  }
+
+  &__card {
+    @extend %flex;
+    justify-content: center;
+
+    font-family: "Montserrat Alternates", sans-serif;
+    font-weight: 400;
+    font-size: 8px;
+    color: $black;
+    width: 100px;
+    height: 100px;
+    background-color: #d9d9d9;
+    border-radius: 20px;
+
+    &-title {
+      margin-bottom: 8px;
+    }
+
+    &-box {
+      display: grid;
+      gap: 36px 59px;
+      grid-template-columns: 100px 100px 100px 100px;
+      grid-template-rows: 100px 100px 100px;
+      width: 577px;
+      margin-bottom: 36px;
+    }
+  }
+
+  &__button {
+    @extend %list-text;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 20px;
+    background-color: $black;
+    color: $white;
+    box-shadow: 3px 3px rgba(0, 0, 0, 0.25);
+    margin-bottom: 20px;
+    cursor: pointer;
+    white-space: nowrap;
+    text-align: left;
+  }
+
+  &__button-block {
+    @extend %flex;
+    position: relative;
+    left: 31px;
+  }
+
+  &__button-box1 {
+    @extend %flex;
+    align-items: flex-end;
+    width: 100%;
+    margin-right: 36px;
+  }
+
+  &__button-box2 {
+    @extend %flex;
+    width: 100%;
+    align-items: flex-start;
+  }
+}
