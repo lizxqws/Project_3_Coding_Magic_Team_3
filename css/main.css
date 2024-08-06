@@ -1,4 +1,4 @@
-.container, .main-block {
+.container, .scientists__button-box2, .scientists__button-box1, .scientists__button-block, .scientists__card, .scientists, .main-block {
   display: flex;
   align-items: center;
   flex-direction: column;
@@ -9,6 +9,20 @@
   font-weight: 400;
   font-size: 24px;
   line-height: 29.3px;
+}
+
+.scientists__title {
+  font-family: "Montserrat Alternates", sans-serif;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 19.5px;
+}
+
+.scientists__button {
+  font-family: "Montserrat Alternates", sans-serif;
+  font-weight: 400;
+  font-size: 12px;
+  line-height: 20.4px;
 }
 
 .wrapper {
@@ -30,6 +44,60 @@
 .main-block__title {
   margin-top: 36px;
   margin-bottom: 36px;
+}
+
+.scientists {
+  margin-bottom: 36px;
+}
+.scientists__title {
+  margin-bottom: 36px;
+}
+.scientists__card {
+  justify-content: center;
+  font-family: "Montserrat Alternates", sans-serif;
+  font-weight: 400;
+  font-size: 8px;
+  color: #000000;
+  width: 100px;
+  height: 100px;
+  background-color: #d9d9d9;
+  border-radius: 20px;
+}
+.scientists__card-title {
+  margin-bottom: 8px;
+}
+.scientists__card-box {
+  display: grid;
+  gap: 36px 59px;
+  grid-template-columns: 100px 100px 100px 100px;
+  grid-template-rows: 100px 100px 100px;
+  width: 577px;
+  margin-bottom: 36px;
+}
+.scientists__button {
+  padding: 10px 20px;
+  border: none;
+  border-radius: 20px;
+  background-color: #000000;
+  color: #FFFFFF;
+  box-shadow: 3px 3px rgba(0, 0, 0, 0.25);
+  margin-bottom: 20px;
+  cursor: pointer;
+  white-space: nowrap;
+  text-align: left;
+}
+.scientists__button-block {
+  position: relative;
+  left: 31px;
+}
+.scientists__button-box1 {
+  align-items: flex-end;
+  width: 100%;
+  margin-right: 36px;
+}
+.scientists__button-box2 {
+  width: 100%;
+  align-items: flex-start;
 }
 
 * {
