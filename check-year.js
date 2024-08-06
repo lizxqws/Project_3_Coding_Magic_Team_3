@@ -4,7 +4,11 @@ const checkYearButton = document.querySelector(".check-year__input-button");
 const checkYearAddBtn = document.querySelector('#btn[data-action="add"]');
 
 const checkYear = () => {
-  if (!checkYearInput.value) {
+  if (
+    !checkYearInput.value ||
+    checkYearInput.value.startsWith("-") ||
+    checkYearInput.value == 0
+  ) {
     checkYearMessage.style.cssText = "color: #990000; ";
     checkYearMessage.innerHTML = "Неправельний формат! Введіть число!";
     return;
