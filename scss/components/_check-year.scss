@@ -1,0 +1,66 @@
+.check-year {
+  padding-top: 36px;
+  padding-bottom: 36px;
+
+  &__title {
+    @extend %subtitle-text;
+    margin-bottom: 36px;
+  }
+
+  &__box {
+    @extend %flex;
+    flex-direction: row;
+    justify-content: space-between;
+
+    width: 576px;
+  }
+
+  &__input {
+    position: relative;
+    display: flex;
+    flex-direction: row;
+    color: $gray;
+    width: 215px;
+    height: 35px;
+
+    &-text {
+      @extend %small-text;
+
+      color: $gray;
+      background-color: $lightgray;
+      border: none;
+      border-radius: 20px;
+      box-shadow: 3px 3px rgba(126, 126, 126, 0.5);
+      padding: 10px;
+      padding-right: 45px;
+      width: 215px;
+    }
+
+    &-text::-webkit-outer-spin-button,
+    &-text::-webkit-inner-spin-button {
+      /* display: none; <- Crashes Chrome on hover */
+      -webkit-appearance: none;
+      margin: 0; /* <-- Apparently some margin are still there even though it's hidden */
+    }
+
+    &-button {
+      position: absolute;
+      right: 0;
+      background-color: $black;
+      border: none;
+      border-radius: 0px 20px 20px 0px;
+      width: 35px;
+      height: 35px;
+      padding: 10px;
+    }
+
+    &-button:hover,
+    &-button:focus {
+      cursor: pointer;
+    }
+
+    &-message {
+      @extend %small-text;
+    }
+  }
+}

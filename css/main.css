@@ -1,7 +1,26 @@
-.container, .main-block {
+.container,
+.check-year__box,
+.scientists__button-box2,
+.scientists__button-box1,
+.scientists__button-block,
+.scientists__card,
+.scientists,
+.main-block,
+.footer__mw-box,
+.footer__mw {
   display: flex;
   align-items: center;
   flex-direction: column;
+}
+
+.check-year__input-message,
+.check-year__input-text,
+.footer__message-button,
+.footer__message-input {
+  font-family: "Montserrat Alternates", sans-serif;
+  font-weight: 400;
+  font-size: 12px;
+  line-height: 14.6px;
 }
 
 .main-block__title {
@@ -11,11 +30,34 @@
   line-height: 29.3px;
 }
 
-.football__title {
+.football__title,
+.check-year__title,
+.scientists__title {
   font-family: "Montserrat Alternates", sans-serif;
   font-weight: 400;
   font-size: 16px;
   line-height: 19.5px;
+}
+.footer__list-item,
+.scientists__button {
+  font-family: "Montserrat Alternates", sans-serif;
+  font-weight: 400;
+  font-size: 12px;
+  line-height: 20.4px;
+}
+
+.footer__message-text {
+  font-family: "Montserrat Alternates", sans-serif;
+  font-weight: 400;
+  font-size: 6px;
+  line-height: 7.3px;
+}
+
+.footer__mw-title {
+  font-family: "Inter", sans-serif;
+  font-weight: 400;
+  font-size: 20px;
+  line-height: 24.2px;
 }
 
 .wrapper {
@@ -32,7 +74,7 @@
   width: 1090px;
   height: 100%;
   min-height: 100vh;
-  background-color: #fff;
+  background-color: #ffffff;
 }
 .main-block__title {
   margin-top: 36px;
@@ -56,6 +98,230 @@
   left: 92px;
   transition: 1s all;
 }
+.check-year {
+  padding-top: 36px;
+  padding-bottom: 36px;
+}
+.check-year__title {
+  margin-bottom: 36px;
+}
+.check-year__box {
+  flex-direction: row;
+  justify-content: space-between;
+  width: 576px;
+}
+.check-year__input {
+  position: relative;
+  display: flex;
+  flex-direction: row;
+  color: #7e7e7e;
+  width: 215px;
+  height: 35px;
+}
+.check-year__input-text {
+  color: #7e7e7e;
+  background-color: #d7d7d7;
+  border: none;
+  border-radius: 20px;
+  box-shadow: 3px 3px rgba(126, 126, 126, 0.5);
+  padding: 10px;
+  padding-right: 45px;
+  width: 215px;
+}
+.check-year__input-text::-webkit-outer-spin-button,
+.check-year__input-text::-webkit-inner-spin-button {
+  /* display: none; <- Crashes Chrome on hover */
+  -webkit-appearance: none;
+  margin: 0; /* <-- Apparently some margin are still there even though it's hidden */
+}
+.check-year__input-button {
+  position: absolute;
+  right: 0;
+  background-color: #000000;
+  border: none;
+  border-radius: 0px 20px 20px 0px;
+  width: 35px;
+  height: 35px;
+  padding: 10px;
+}
+.check-year__input-button:hover,
+.check-year__input-button:focus {
+  cursor: pointer;
+}
+.footer {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  min-height: 220px;
+  background-color: #ffffff;
+}
+.footer__container {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  width: 1091px;
+  min-height: 100px;
+}
+.footer__list {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-evenly;
+  height: inherit;
+}
+.footer__list-item {
+  color: #000000;
+}
+.footer__message {
+  width: 347px;
+  height: 60px;
+  margin-top: 36px;
+  margin-bottom: 4px;
+}
+.footer__message-box {
+  display: flex;
+  justify-content: space-between;
+  width: inherit;
+  height: 35px;
+  margin-bottom: 18px;
+}
+.footer__message-input {
+  width: 204px;
+  padding: 10px;
+  border: none;
+  border-radius: 50px;
+  color: #7e7e7e;
+  background-color: #d7d7d7;
+}
+.footer__message-button {
+  width: 107px;
+  padding: 10px;
+  color: #ffffff;
+  background-color: #000000;
+  border: none;
+  border-radius: 50px;
+}
+.footer__message-button:hover,
+.footer__message-button:focus {
+  cursor: pointer;
+}
+.footer__message-text {
+  color: #000000;
+}
+
+.footer__mw-wrapper {
+  display: none;
+  position: fixed;
+  left: 50%;
+  top: 50%;
+  transform: translate(-50%, -50%);
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.5);
+}
+.footer__mw {
+  justify-content: center;
+  position: relative;
+  left: 50%;
+  top: 50%;
+  transform: translate(-50%, -50%);
+  width: 463px;
+  height: 245px;
+  background-color: #ffffff;
+  border-radius: 20px;
+}
+.footer__mw-button-close {
+  position: absolute;
+  top: 30px;
+  right: 30px;
+  padding: 0;
+  background: none;
+  border: none;
+}
+.footer__mw-button-close:hover,
+.footer__mw-button-close:focus {
+  cursor: pointer;
+}
+.footer__mw-title {
+  margin-top: 14px;
+}
+.footer__mw-box {
+  position: relative;
+  width: 378px;
+  height: 106px;
+}
+.footer__mw-icon {
+  position: absolute;
+}
+.footer__mw-icon1 {
+  top: 0;
+  left: 0;
+}
+.footer__mw-icon2 {
+  top: 0;
+  right: 0;
+}
+.footer__mw-icon3 {
+  bottom: 0;
+  left: 44px;
+}
+.footer__mw-icon4 {
+  bottom: 0;
+  right: 44px;
+}
+.scientists {
+  margin-bottom: 36px;
+}
+.scientists__title {
+  margin-bottom: 36px;
+}
+.scientists__card {
+  justify-content: center;
+  font-family: "Montserrat Alternates", sans-serif;
+  font-weight: 400;
+  font-size: 8px;
+  color: #000000;
+  width: 100px;
+  height: 100px;
+  background-color: #d9d9d9;
+  border-radius: 20px;
+}
+.scientists__card-title {
+  margin-bottom: 8px;
+}
+.scientists__card-box {
+  display: grid;
+  gap: 36px 59px;
+  grid-template-columns: 100px 100px 100px 100px;
+  grid-template-rows: 100px 100px 100px;
+  width: 577px;
+  margin-bottom: 36px;
+}
+.scientists__button {
+  padding: 10px 20px;
+  border: none;
+  border-radius: 20px;
+  background-color: #000000;
+  color: #ffffff;
+  box-shadow: 3px 3px rgba(0, 0, 0, 0.25);
+  margin-bottom: 20px;
+  cursor: pointer;
+  white-space: nowrap;
+  text-align: left;
+}
+.scientists__button-block {
+  position: relative;
+  left: 31px;
+}
+.scientists__button-box1 {
+  align-items: flex-end;
+  width: 100%;
+  margin-right: 36px;
+}
+.scientists__button-box2 {
+  width: 100%;
+  align-items: flex-start;
+}
 
 * {
   box-sizing: border-box;
@@ -65,4 +331,13 @@
 .container {
   width: 720px;
   margin: 0 auto;
+}
+
+.line {
+  width: 536px;
+  height: 2px;
+  border-width: 0;
+  margin: 0;
+  color: #000000;
+  background-color: #000000;
 }

@@ -18,18 +18,121 @@
   <main class="wrapper">
     <div class="main-block">
       <h1 class="main-block__title">Популярні інетрактивні ігри</h1>
+      <hr class="line">
+      <section class="container check-year">
+        <h2 class="check-year__title">Перевір в який рік ти народився</h2>
+        <div class="check-year__box">
+          <div class="check-year__input">
+            <input class="check-year__input-text" type="number" placeholder="Введіть рік народження">
+            <button id="btn" class="check-year__input-button" data-action="add">
+              <svg viewBox="0 0 16 16" width="16" height="16">
+                <use xlink:href="./src/icons/search-icon.svg#search" fill="white" />
+              </svg>
+            </button>
+          </div>
+          <p class="check-year__input-message"></p>
+        </div>
+      </section>
+      <hr class="line">
+
       <section class="container football">
         <h2 class="football__title">Футбол</h2>
         <div class="football__wrapper">
           <img class="football__ball" src="./src/images/football.png" alt="">
         </div>
       </section>
-    </div>
+
+      <section class="scientists">
+        <h2 class="scientists__title">Обери вченого/их</h2>
+        <div class="scientists__card-box">
+        </div>
+        <div class="scientists__button-block">
+          <div style="display: flex;">
+            <div class="scientists__button-box1">
+              <button class="scientists__button" id="scientists-19th-century">Які вчені народилися в 19 ст.</button>
+              <button class="scientists__button" id="scientists-alphabet-order">Відсортувати вчених за
+                алфавітом</button>
+              <button class="scientists__button" id="scientists-years-lived">Відсортувати вчених за кількістю прожитих
+                років</button>
+              <button class="scientists__button" id="scientists-latest-born">Знайти вченого, який народився
+                найпізніше</button>
+            </div>
+            <div class="scientists__button-box2">
+              <button class="scientists__button" id="scientists-yearOfEinstein">Знайти рік народження Albert
+                Einstein</button>
+              <button class="scientists__button" id="scientists-surnameStartsWithC">Знайти вчених, прізвища яких
+                починаються на на літеру
+                “С”</button>
+              <button class="scientists__button" id="scientists-nameStartsWithA">Видалити всіх вчених, ім’я яких
+                починається на
+                “А”</button>
+              <button class="scientists__button" id="scientists-live">Знайти вченого, який прожив найдовше і вченого,
+                <br>
+                який прожив найменше</button>
+            </div>
+          </div>
+          <button class="scientists__button" style="margin-bottom: 0;" id="scientists-sameNameSurname">1. Знайти вчених,
+            в яких
+            співпадають перші літери
+            імені
+            і прізвища</button>
+        </div>
+      </section>
   </main>
-  <footer></footer>
+  <footer class="footer">
+    <div class="footer__container">
+      <svg width="165" height="70" viewBox="0 0 165 70" fill="black">
+        <use xlink:href="./src/icons/logo-footer.svg#logo-footer"></use>
+      </svg>
+
+      <ul class="footer__list">
+        <li class="footer__list-item">Тел: +38 (123) 456 78 90 </li>
+        <li class="footer__list-item">E-Mail: codingmagic@gmail.com</li>
+        <li class="footer__list-item">Facebook: CodingMagic</li>
+        <li class="footer__list-item">Twitter: CodingMagic</li>
+        <li class="footer__list-item">Instagram: CodingMagic</li>
+      </ul>
+
+      <div class="footer__message">
+        <div class="footer__message-box">
+          <input id="footer-email" class="footer__message-input" type="email" placeholder="Ваша ел. адреса..." required>
+          <button id="mw-open" class="footer__message-button">Підписатись</button>
+        </div>
+        <p class="footer__message-text">*Підписавшись, Ви зможете отримувати інформаццію про новинки на сайті</p>
+      </div>
+    </div>
+  </footer>
+
+  <div id="modal" class="footer__mw-wrapper">
+    <div class="footer__mw">
+      <button id="mw-close" class="footer__mw-button-close">
+        <svg id="footer__mw-close" width="17" height="17" viewBox="0 0 17 17" fill="none">
+          <use xlink:href="./src/icons/close-icon.svg#close"></use>
+        </svg>
+      </button>
+      <div class="footer__mw-box">
+        <h2 class="footer__mw-title">Дякую за підписку!</h2>
+        <svg class="footer__mw-icon footer__mw-icon1" width="30" height="30" viewBox="0 0 30 30" fill="black">
+          <use xlink:href="../src/icons/sword.svg#sword"></use>
+        </svg>
+        <svg class="footer__mw-icon footer__mw-icon2" width="30" height="30" viewBox="0 0 30 30" fill="black">
+          <use xlink:href="../src/icons/game-development.svg#game"></use>
+        </svg>
+        <svg class="footer__mw-icon footer__mw-icon3" width="30" height="30" viewBox="0 0 30 30" fill="black">
+          <use xlink:href="../src/icons/puzzle.svg#puzzle"></use>
+        </svg>
+        <svg class="footer__mw-icon footer__mw-icon4" width="30" height="30" viewBox="0 0 30 30" fill="black">
+          <use xlink:href="../src/icons/tic-tac-toe.svg#tic-tac-toe"></use>
+        </svg>
+      </div>
+    </div>
+  </div>
 </body>
 
+<script src="./check-year.js"></script>
 <script src="./football.js"></script>
+<script src="./footer.js"></script>
+<script src="./scientists.js"></script>
 <script src="./index.js"></script>
 
 </html>
