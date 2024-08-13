@@ -4,6 +4,11 @@ const modal = document.querySelector("#modal");
 const email = document.querySelector("#footer-email");
 const body = document.querySelector("body");
 
+function closeModal() {
+  modal.style.display = "none";
+  body.style.overflow = "visible";
+}
+
 mwOpen.addEventListener("click", function () {
   if (email.value.includes("@")) {
     modal.style.display = "block";
@@ -15,20 +20,17 @@ mwOpen.addEventListener("click", function () {
 });
 
 mwClose.addEventListener("click", function () {
-  modal.style.display = "none";
-  body.style.overflow = "visible";
+  closeModal();
 });
 
 modal.addEventListener("click", function (event) {
   if (event.target === modal) {
-    modal.style.display = "none";
-    body.style.overflow = "visible";
+    closeModal();
   }
 });
 
 document.addEventListener("keydown", function (event) {
   if (event.key === "Escape") {
-    modal.style.display = "none";
-    body.style.overflow = "visible";
+    closeModal();
   }
 });
