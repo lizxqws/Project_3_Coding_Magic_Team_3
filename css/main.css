@@ -1,4 +1,4 @@
-.container, .pop-up__text, .pop-up__box, .pop-up, .scientists__button-box2, .scientists__button-box1, .scientists__button-block, .scientists__card, .scientists, .footer__mw-box, .footer__mw, .check-year__box, .main-block {
+.container, .scientists__button-box2, .scientists__button-box1, .scientists__button-block, .scientists__card, .scientists, .footer__mw-box, .footer__mw, .check-year__box, .pop-up__text, .pop-up__box, .pop-up, .main-block {
   display: flex;
   align-items: center;
   flex-direction: column;
@@ -97,6 +97,7 @@ body {
   width: 100%;
   height: 100%;
   background-color: rgba(0, 0, 0, 0.5);
+  z-index: 999;
 }
 .pop-up__box {
   justify-content: space-between;
@@ -328,6 +329,7 @@ body {
 }
 
 .scientists {
+  margin-top: 36px;
   margin-bottom: 36px;
 }
 .scientists__title {
