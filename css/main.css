@@ -1,10 +1,10 @@
-.container, .footer__mw-box, .footer__mw, .pop-up__text, .pop-up__box, .pop-up, .main-block {
+.container, .pop-up__text, .pop-up__box, .pop-up, .scientists__button-box2, .scientists__button-box1, .scientists__button-block, .scientists__card, .scientists, .footer__mw-box, .footer__mw, .check-year__box, .main-block {
   display: flex;
   align-items: center;
   flex-direction: column;
 }
 
-.footer__message-button, .footer__message-input {
+.footer__message-button, .footer__message-input, .check-year__input-message, .check-year__input-text {
   font-family: "Montserrat Alternates", sans-serif;
   font-weight: 400;
   font-size: 12px;
@@ -18,7 +18,14 @@
   line-height: 29.3px;
 }
 
-.footer__list-item {
+.scientists__title, .check-year__title, .football__title {
+  font-family: "Montserrat Alternates", sans-serif;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 19.5px;
+}
+
+.scientists__button, .footer__list-item {
   font-family: "Montserrat Alternates", sans-serif;
   font-weight: 400;
   font-size: 12px;
@@ -60,7 +67,7 @@
   width: 1090px;
   height: 100%;
   min-height: 100vh;
-  background-color: #fff;
+  background-color: #ffffff;
 }
 .main-block__title {
   margin-top: 36px;
@@ -130,6 +137,72 @@ body {
   right: 85px;
 }
 
+.football__wrapper {
+  position: relative;
+  width: 720px;
+  height: 220px;
+  border: 2px solid #000000;
+  border-radius: 25px;
+  background-color: #5abb58;
+}
+.football__title {
+  margin-bottom: 36px;
+}
+.football__ball {
+  position: absolute;
+  top: 85px;
+  left: 92px;
+  transition: 1s all;
+}
+
+.check-year {
+  padding-top: 36px;
+  padding-bottom: 36px;
+}
+.check-year__title {
+  margin-bottom: 36px;
+}
+.check-year__box {
+  flex-direction: row;
+  justify-content: space-between;
+  width: 576px;
+}
+.check-year__input {
+  position: relative;
+  display: flex;
+  flex-direction: row;
+  color: #7e7e7e;
+  width: 215px;
+  height: 35px;
+}
+.check-year__input-text {
+  color: #7e7e7e;
+  background-color: #d7d7d7;
+  border: none;
+  border-radius: 20px;
+  box-shadow: 3px 3px rgba(126, 126, 126, 0.5);
+  padding: 10px;
+  padding-right: 45px;
+  width: 215px;
+}
+.check-year__input-text::-webkit-outer-spin-button, .check-year__input-text::-webkit-inner-spin-button {
+  /* display: none; <- Crashes Chrome on hover */
+  -webkit-appearance: none;
+  margin: 0; /* <-- Apparently some margin are still there even though it's hidden */
+}
+.check-year__input-button {
+  position: absolute;
+  right: 0;
+  background-color: #000000;
+  border: none;
+  border-radius: 0px 20px 20px 0px;
+  width: 35px;
+  height: 35px;
+  padding: 10px;
+}
+.check-year__input-button:hover, .check-year__input-button:focus {
+  cursor: pointer;
+}
 .footer {
   display: flex;
   justify-content: center;
@@ -254,6 +327,60 @@ body {
   right: 44px;
 }
 
+.scientists {
+  margin-bottom: 36px;
+}
+.scientists__title {
+  margin-bottom: 36px;
+}
+.scientists__card {
+  justify-content: center;
+  font-family: "Montserrat Alternates", sans-serif;
+  font-weight: 400;
+  font-size: 8px;
+  color: #000000;
+  width: 100px;
+  height: 100px;
+  background-color: #d9d9d9;
+  border-radius: 20px;
+}
+.scientists__card-title {
+  margin-bottom: 8px;
+}
+.scientists__card-box {
+  display: grid;
+  gap: 36px 59px;
+  grid-template-columns: 100px 100px 100px 100px;
+  grid-template-rows: 100px 100px 100px;
+  width: 577px;
+  margin-bottom: 36px;
+}
+.scientists__button {
+  padding: 10px 20px;
+  border: none;
+  border-radius: 20px;
+  background-color: #000000;
+  color: #ffffff;
+  box-shadow: 3px 3px rgba(0, 0, 0, 0.25);
+  margin-bottom: 20px;
+  cursor: pointer;
+  white-space: nowrap;
+  text-align: left;
+}
+.scientists__button-block {
+  position: relative;
+  left: 31px;
+}
+.scientists__button-box1 {
+  align-items: flex-end;
+  width: 100%;
+  margin-right: 36px;
+}
+.scientists__button-box2 {
+  width: 100%;
+  align-items: flex-start;
+}
+
 * {
   box-sizing: border-box;
   font-family: "Roboto", sans-serif;
@@ -262,4 +389,13 @@ body {
 .container {
   width: 720px;
   margin: 0 auto;
+}
+
+.line {
+  width: 536px;
+  height: 2px;
+  border-width: 0;
+  margin: 0;
+  color: #000000;
+  background-color: #000000;
 }

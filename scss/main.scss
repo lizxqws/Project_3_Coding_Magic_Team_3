@@ -3,8 +3,11 @@
 
 @import "components/background";
 @import "components/pop-up";
+@import "components/football";
+@import "components/check-year";
 @import "components/footer";
 @import "components/footer-modal";
+@import "components/scientists";
 
 * {
   box-sizing: border-box;
@@ -15,4 +18,14 @@
   @extend %flex;
   width: 720px;
   margin: 0 auto;
+}
+
+.line {
+  width: 536px;
+
+  height: 2px;
+  border-width: 0;
+  margin: 0;
+  color: $black;
+  background-color: $black;
 }

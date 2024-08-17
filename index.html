@@ -50,7 +50,66 @@
   <main class="wrapper">
     <div class="main-block">
       <h1 class="main-block__title">Популярні інетрактивні ігри</h1>
-    </div>
+      <hr class="line">
+      <section class="container check-year">
+        <h2 class="check-year__title">Перевір в який рік ти народився</h2>
+        <div class="check-year__box">
+          <div class="check-year__input">
+            <input class="check-year__input-text" type="number" placeholder="Введіть рік народження">
+            <button id="btn" class="check-year__input-button" data-action="add">
+              <svg viewBox="0 0 16 16" width="16" height="16">
+                <use xlink:href="./src/icons/search-icon.svg#search" fill="white" />
+              </svg>
+            </button>
+          </div>
+          <p class="check-year__input-message"></p>
+        </div>
+      </section>
+      <hr class="line">
+
+      <section class="container football">
+        <h2 class="football__title">Футбол</h2>
+        <div class="football__wrapper">
+          <img class="football__ball" src="./src/images/football.png" alt="">
+        </div>
+      </section>
+
+      <section class="scientists">
+        <h2 class="scientists__title">Обери вченого/их</h2>
+        <div class="scientists__card-box">
+        </div>
+        <div class="scientists__button-block">
+          <div style="display: flex;">
+            <div class="scientists__button-box1">
+              <button class="scientists__button" id="scientists-19th-century">Які вчені народилися в 19 ст.</button>
+              <button class="scientists__button" id="scientists-alphabet-order">Відсортувати вчених за
+                алфавітом</button>
+              <button class="scientists__button" id="scientists-years-lived">Відсортувати вчених за кількістю прожитих
+                років</button>
+              <button class="scientists__button" id="scientists-latest-born">Знайти вченого, який народився
+                найпізніше</button>
+            </div>
+            <div class="scientists__button-box2">
+              <button class="scientists__button" id="scientists-yearOfEinstein">Знайти рік народження Albert
+                Einstein</button>
+              <button class="scientists__button" id="scientists-surnameStartsWithC">Знайти вчених, прізвища яких
+                починаються на на літеру
+                “С”</button>
+              <button class="scientists__button" id="scientists-nameStartsWithA">Видалити всіх вчених, ім’я яких
+                починається на
+                “А”</button>
+              <button class="scientists__button" id="scientists-live">Знайти вченого, який прожив найдовше і вченого,
+                <br>
+                який прожив найменше</button>
+            </div>
+          </div>
+          <button class="scientists__button" style="margin-bottom: 0;" id="scientists-sameNameSurname">1. Знайти вчених,
+            в яких
+            співпадають перші літери
+            імені
+            і прізвища</button>
+        </div>
+      </section>
   </main>
   <footer class="footer">
     <div class="footer__container">
@@ -108,6 +167,10 @@
 </body>
 
 <script src="./pop-up.js"></script>
+<script src="./check-year.js"></script>
+<script src="./football.js"></script>
 <script src="./footer.js"></script>
+<script src="./scientists.js"></script>
+<script src="./index.js"></script>
 
 </html>
