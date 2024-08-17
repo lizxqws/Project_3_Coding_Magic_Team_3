@@ -26,6 +26,11 @@
       @extend %list-text;
       color: $black;
     }
+
+    &-link {
+      color: $black;
+      text-decoration: none;
+    }
   }
 
   &__message {
@@ -75,4 +80,3 @@
     }
   }
 }
-
