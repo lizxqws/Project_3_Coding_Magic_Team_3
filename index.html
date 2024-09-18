@@ -66,6 +66,26 @@
         </div>
       </section>
       <hr class="line">
+	  <h2>Калькулятор</h2>
+		<div class="calculator">
+        <input type="number" id="firstNumber" placeholder="Введiть число">
+        
+        <div>
+            <button onclick="setOperation('+')">+</button>
+            <button onclick="setOperation('-')">-</button>
+            <button onclick="setOperation('*')">*</button>
+            <button onclick="setOperation('/')">/</button>
+        </div>
+
+        <input type="number" id="secondNumber" placeholder="Введiть число">
+        
+        <button onclick="calculate()">=</button>
+
+        <input type="text" id="result" placeholder="Результат" readonly>
+    </div>
+
+    <script src="calculator.js"></script>
+	  <hr class="line">
 
       <section class="container football" style="margin-top: 36px; margin-bottom: 36px;">
         <h2 class="football__title">Футбол</h2>
@@ -73,7 +93,19 @@
           <img class="football__ball" src="./src/images/football.png" alt="">
         </div>
       </section>
-
+	  <hr class="line">
+	 <h1>Наша команда</h1>
+    <div class="carousel">
+        <button onclick="previous()">&#9664;</button>
+        
+        <div class="student-info">
+            <div id="studentName">Ім'я студента</div>
+            <div id="studentImage" style="width: 100px; height: 100px; background: #ddd; border-radius: 10px;"></div>
+            <div id="studentDescription">Інформація про роботу, яку він/вона виконав/ла</div>
+        </div>
+        
+        <button onclick="next()">&#9654;</button>
+    </div>
       <hr class="line">
       <section class="scientists">
         <h2 class="scientists__title">Обери вченого/их</h2>
@@ -173,5 +205,7 @@
 <script src="./footer.js"></script>
 <script src="./scientists.js"></script>
 <script src="./index.js"></script>
+<script src="./calculator.js"></script>
+<script src="carousel.js"></script>
 
 </html>
